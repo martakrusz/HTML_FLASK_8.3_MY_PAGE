@@ -1,0 +1,26 @@
+h1 { 
+    background-color:#cce6ff;
+    font-family: Lato;
+}
+h2 {
+    color:#003366;
+    font-size: 40px;
+    font-family: Lato;
+}
+p {
+    font-size: 25px;
+    font-family: Lato;
+}
+
+li {
+    font-size: 25px;
+    font-family: Lato;
+}
+img {
+    width: 20%; 
+    height: 20%;
+}
+
+label {
+    font-size: 25px;
+}

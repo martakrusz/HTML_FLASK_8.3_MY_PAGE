@@ -1,0 +1,19 @@
+
+   {% extends "parent.html" %}
+   {% block content %}
+
+      <h2>Kontakt</h2>
+
+        <p>
+        <ul>
+            <li><strong>Email:</strong> martakrusz@gmail.com</li>
+            <li><strong>Telefon:</strong> 521 689 678</li>
+        </ul>
+        </p>
+        
+        <form action="" method="post ">
+            <label id="sent_mail "><strong>Wyślij wiadomość</strong></label><br><br>
+            <textarea id="message " name="user_message "></textarea><br><br>
+            <button id="submit " type="submit ">Prześlij</button><br><br>
+        </form>
+    {% endblock %}
