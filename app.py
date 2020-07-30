@@ -18,8 +18,9 @@ def mypage():
 @app.route('/mypage/contact', methods=['GET', 'POST'])
 def mp_contact():
    if request.method == 'GET':
+       owner = {"Telefon": "555 888 444", "Email": "marta@gmail.com"}
        print("We received GET")
-       return render_template("contact.html")
+       return render_template("contact.html", items=owner)
    elif request.method == 'POST':
        print("We received POST")
        print(request.form)

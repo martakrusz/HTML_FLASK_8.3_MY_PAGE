@@ -4,14 +4,15 @@
 
       <h2>Kontakt</h2>
 
-        <p>
+    <div>
         <ul>
-            <li><strong>Email:</strong> martakrusz@gmail.com</li>
-            <li><strong>Telefon:</strong> 521 689 678</li>
+            {% for item in items %}
+             <li><b>{{item}}: </b>{{items[item]}}</li>
+            {% endfor %}
         </ul>
-        </p>
+    </div>
         
-        <form action="" method="post ">
+        <form action="" method="GET">
             <label id="sent_mail "><strong>Wyślij wiadomość</strong></label><br><br>
             <textarea id="message " name="user_message "></textarea><br><br>
             <button id="submit " type="submit ">Prześlij</button><br><br>
